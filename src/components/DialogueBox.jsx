@@ -2,7 +2,7 @@ import React from "react";
 
 function DialogueBox({ selectedService, selectedPin }) {
   return (
-    <p className="bg-slate-800 text-white p-4 rounded-xl border-2">
+    <p className="bg-amber-500 text-black font-bold p-4 rounded-xl border-2">
       {selectedService && selectedPin ? (
         `${selectedService} with Vehicle Number ${Math.floor(
           Math.random() * 10000
