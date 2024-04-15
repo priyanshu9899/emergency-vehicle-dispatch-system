@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="h-screen bg-gradient-to-b from-amber-50 via-red-300 to-yellow-400 relative">
+      <div className="h-screen bg-gradient-to-b from-amber-200 via-amber-50 to-red-300 relative">
         <Heading />
         <div className="flex gap-10">
           <DropdownMenu setSelectedService={setSelectedService} />
