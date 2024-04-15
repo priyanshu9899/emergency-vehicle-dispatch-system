@@ -1,0 +1,23 @@
+[
+    {
+        "service":"Fire Station",
+        "emoticon":"🚒",
+        "pin":"832004"
+    },
+    {
+        "service":"Ambulance",
+        "emoticon":"🚑",
+        "pin":"832054"
+    },
+    {
+        "service":"Police Station",
+        "emoticon":"🚓",
+        "pin":"832044"
+    },
+    {
+        "pin":"832094"
+    },
+    {
+        "pin":"837014"
+    }
+]
