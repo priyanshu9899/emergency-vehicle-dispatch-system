@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Heading from "./components/Heading";
-import DropdownMenu from "./components/DropdownMenu";
+import ServiceButtons from "./components/DropdownMenu";
 import Dropdown from "./components/Dropdown";
 import DialogueBox from "./components/DialogueBox";
 
@@ -12,8 +12,10 @@ function App() {
     <>
       <div className="h-screen bg-gradient-to-b from-amber-200 via-amber-50 to-red-300 relative">
         <Heading />
-        <div className="flex gap-10">
-          <DropdownMenu setSelectedService={setSelectedService} />
+        <div className="flex flex-col items-center w-full">
+          <div className="flex gap-10">
+            <ServiceButtons setSelectedService={setSelectedService} />
+          </div>
           <Dropdown setSelectedPin={setSelectedPin} />
         </div>
         {selectedService && selectedPin && (
