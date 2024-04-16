@@ -13,25 +13,24 @@ function Dropdown({ setSelectedPin }) {
   };
 
   return (
-    <div className="relative flex flex-col items-center w-[340px] h-[340px] rounded-lg m-10 left-60 top-10">
+    <div className="relative flex flex-col items-center w-[340px] rounded-lg m-10">
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="bg-blue-400 p-4 w-full flex items-center justify-between font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white"
+        className="bg-amber-400 p-4 flex items-center justify-between font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white"
       >
-        {selectedOption || "Our Availability"}
-        {!isOpen ? (
-          <FaCaretDown className="h-8" />
-        ) : (
+        {isOpen ? "Close Options" : "Our Options"}
+        {isOpen ? (
           <FaCaretUp className="h-8" />
+        ) : (
+          <FaCaretDown className="h-8" />
         )}
       </button>
-
       {isOpen && (
-        <div className="bg-blue-400 absolute top-20 flex flex-col items-start rounded-lg p-2 w-full">
+        <div className="bg-amber-400 mt-2 flex flex-col items-start rounded-lg p-2 w-full">
           {list.map((item, i) => (
             <div
               onClick={() => handlePinSelection(item.pin)}
-              className={`flex w-full justify-between p-4 hover:bg-blue-300 cursor-pointer rounded-r-lg border-l-transparent hover:border-l-white border-l-4 ${selectedOption === item.pin ? "bg-blue-300" : ""}`}
+              className={`flex w-full justify-between p-4 hover:bg-yellow-600 cursor-pointer rounded-r-lg border-l-transparent hover:border-l-white border-l-4 ${selectedOption === item.pin ? "bg-amber-300" : ""}`}
               key={i}
             >
               <h3 className="font-bold">{item.pin}</h3>
