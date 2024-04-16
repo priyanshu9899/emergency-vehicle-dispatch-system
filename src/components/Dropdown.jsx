@@ -18,7 +18,7 @@ function Dropdown({ setSelectedPin }) {
         onClick={() => setIsOpen((prev) => !prev)}
         className="bg-amber-400 p-4 flex items-center justify-between font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white"
       >
-        {isOpen ? "Close Options" : "Our Options"}
+        {isOpen ? "Close Options" : "Our Availablity"}
         {isOpen ? (
           <FaCaretUp className="h-8" />
         ) : (

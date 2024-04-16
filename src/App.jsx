@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className="h-screen bg-gradient-to-b from-amber-200 via-amber-50 to-red-300 relative">
+      <div className="h-screen bg-gradient-to-b from-amber-100 via-amber-50 to-red-400 relative pt-2">
         <Heading />
         <div className="flex flex-col items-center w-full">
           <div className="flex gap-10">
@@ -19,7 +19,7 @@ function App() {
           <Dropdown setSelectedPin={setSelectedPin} />
         </div>
         {selectedService && selectedPin && (
-          <div className="absolute left-80 ml-20 top-3/4">
+          <div className="absolute left-80 ml-20 bottom-10">
             <DialogueBox
               selectedService={selectedService}
               selectedPin={selectedPin}
